@@ -20,14 +20,31 @@
 //     for(let i=0;)
 //  return 'Th'
 // }
-const names = ["Ada", "Brendan", "Ali",];
-function writeCards(names, birthday) {
-  for (let i = 0; i < names.length; i++) {
-    console.log(`Thank you, ${names[i]}, for the wonderful ${birthday} gift!`);
+// const names = ["Ada", "Brendan", "Ali",];
+// function writeCards(names, birthday) {
+//   for (let i = 0; i < names.length; i++) {
+//     console.log(`Thank you, ${names[i]}, for the wonderful ${birthday} gift!`);
+//   }
+//   return names;
+// }
+// writeCards(names);
+
+function writeCards(names, eventName){
+  let messages = [];
+  for (let i=0; i<names.length; i++){
+    console.log(i);
+    console.log(messages.push(`Thank you, ${names[i]}, for the wonderful ${eventName} gift!`));
+
   }
-  return names;
+  return messages;
 }
-writeCards(names);
+writeCards(["Ada", "Brendan", "Ali"], "birthday");
+
+
+
+
+
+
 
 function countDown(num) {
    while(num >= 0) {
